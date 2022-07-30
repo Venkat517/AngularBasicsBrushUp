@@ -9,6 +9,7 @@
 .form-control {
   position: relative;
   margin-bottom:10px;
+  border: none !important;
   padding-bottom: 0px;
 }
 .form-control label {
