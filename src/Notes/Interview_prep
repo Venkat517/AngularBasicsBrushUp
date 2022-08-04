@@ -43,7 +43,16 @@ it defines what kind of angular class it is? for eg if its a @Component then its
 same a Q9
 
 11) What is a template?
-Template is an HTML view where we write the directives and there are 2 ways to define 1)Inline and 2)External. 
+Template is an HTML view where we write the directives and there are 2 ways to define 1)Inline and 2)External.
+
+12) What are different types of data binding in angular?
+It defines as how data is communicated betweent the view and the component
+There are four types of data binding, they are
+  (i) Interpolation/Expression : Data flows from component to view and that is embedded in html tags using {{ }}
+  (ii) Property binding: Data flows froms component to view and represents using []
+  (iii) event binding: Data flows from view to component and represents using ()
+  (iv) Two way binding: Data flows from view to component and component to view and represents using [()]
+
 
 
 
