@@ -53,6 +53,15 @@ There are four types of data binding, they are
   (iii) event binding: Data flows from view to component and represents using ()
   (iv) Two way binding: Data flows from view to component and component to view and represents using [()]
 
+13) Explain the Angular Architecture ?
+  (1) Template: HTML view of an angular
+  (2) Component: Binds the view and model
+  (3) Modules: Groups the components
+  (4) Bindings: define how data is communicated between components and view
+  (5) Directives: changes the HTML DOM behaviour
+  (6) Services: helps to share the common logic across the project
+  (7) DI: helps to inject the instance across the construtor.
 
+14)
 
 
