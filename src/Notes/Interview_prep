@@ -18,5 +18,17 @@ There are 3 types of directives, they are (S A C)
   - Component directives
     A custom directive(user control)
 
+4) What is npm and node_modules folder in the angular.js folder?
+Npm is a package manager where makes intallation of any javascript, node_modules is the folder where all the packages where installed.
+
+5) What is package.Json file?
+It has all the javascript references which is required to run the project.
+
+6) What is typescript and why do we need it?
+It is a superset of javascript and it adds types to javascript, It also gives oops environment and later compiles to Js
+and it is strongly typed language so that we can catch errors at compile time.
+
+
+
 
 
