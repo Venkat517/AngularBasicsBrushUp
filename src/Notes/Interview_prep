@@ -28,7 +28,22 @@ It has all the javascript references which is required to run the project.
 It is a superset of javascript and it adds types to javascript, It also gives oops environment and later compiles to Js
 and it is strongly typed language so that we can catch errors at compile time.
 
+7) What is Angular CLI and why do we need this?
+Helps to create a readymade angular project when u can work on for the project
+ng new myApp
 
+8) What is the importance of component and module in the angular?
+  Component - where it binds the view(UI) and model(JS)
+  module - where its groups multiple components and connects logically.
+
+9) What is a decorater?
+it defines what kind of angular class it is? for eg if its a @Component then its a angular component and if it is a @NGModule then its a module.
+
+10) What are annotations or Metadata?
+same a Q9
+
+11) What is a template?
+Template is an HTML view where we write the directives and there are 2 ways to define 1)Inline and 2)External. 
 
 
 
