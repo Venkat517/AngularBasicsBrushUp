@@ -62,6 +62,44 @@ There are four types of data binding, they are
   (6) Services: helps to share the common logic across the project
   (7) DI: helps to inject the instance across the construtor.
 
-14)
+14) What is SPA in angular?
+  It loads only the single web document and then updates the contents as per user demand.
+
+15) How to implement the single page application in the angular?
+    This can be acheived by using the concept called routing. Now Routing is used to navigate from one page to another.
+  It consits of 2 things, one is URL and 2nd is when this URL is called which component should be loaded.
+
+16) How to implement Routing?
+  (1) define the routing collection where we define which component should be load for particular route
+  (2) we need to have the <router-outlet> where excatly our page should load.
+  (3) we have to define the routerlink in the html  <a [routerlink]> = "['home']"> Home </a>
+
+17) What exactly is lazy loading?
+ it is called as on demand loading which is essential like HTML, CSS and JS. Thus we can acheive better performance.
+
+18) How to implement Lazy loading in angular?
+(1) divide the project into separete modules
+(2) use the load children in the routes collection of that particular modules.
+
+19) What are services?
+  use to share the common functionality across the project.
+
+20) What is dependency injection?
+  DI is a design pattern, where rather than creating the object instance with the component, Angular will inject via constructor.
+
+21) How do we implement dependency injection?
+  (1) In the module, inside NgModule decorater, we have providers collection where we provide for particular class what instance should be injected
+
+  providers: [
+    {provide: Baselogger, useClass: HttpLogger},
+  ]
+
+ // in component
+  constructor(public bl: Baselogger){
+    this.bl.log();
+  }
+
+22) What is benefit of using dependency injection?
+  helps to decouple the class dependencies, so that when we need to add new dependencies we dont have to change every where else.
 
 
