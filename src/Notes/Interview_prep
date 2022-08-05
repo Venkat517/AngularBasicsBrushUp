@@ -142,3 +142,10 @@ in case i, temp ref variable #div1 is referenced by viewchild (single view objec
 in case ii, comp2 is refereced by viewchild (single view object)
 
 in case iii, comp2 collection is referenced by viewchildren (collection view object).
+
+26) Why do we need Template reference variable?
+  Template reference variable helps to refers the htmlDOM element, a component, directive ..etc
+
+eg: case i - we will refer by using # and name of variable. now we can use in the same view as
+
+  {{ div1.textcontent}}
