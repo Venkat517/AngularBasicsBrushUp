@@ -107,3 +107,6 @@ There are four types of data binding, they are
 
 24) Explain --prod parameter in ng build?
 it will make ready for productions where it removes all unnecessary things and tries to make most compress code.
+
+// Advanced topic //
+
