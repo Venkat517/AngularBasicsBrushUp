@@ -102,4 +102,8 @@ There are four types of data binding, they are
 22) What is benefit of using dependency injection?
   helps to decouple the class dependencies, so that when we need to add new dependencies we dont have to change every where else.
 
+23) what is the difference between ngserve and ngbuild?
+  ngserve build the angular application inside the RAM where as ngbuild builds inside the harddisk, for productions we use ngbuild.
 
+24) Explain --prod parameter in ng build?
+it will make ready for productions where it removes all unnecessary things and tries to make most compress code.
