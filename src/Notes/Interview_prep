@@ -149,3 +149,19 @@ in case iii, comp2 collection is referenced by viewchildren (collection view obj
 eg: case i - we will refer by using # and name of variable. now we can use in the same view as
 
   {{ div1.textcontent}}
+
+27) What is content Projection?
+  It is the scenario where we want to project the content from parent component to the child component.
+we will specify in <ng-content> </ng-content>.
+
+28) What is content Projection slot?
+  if we have the multiple content projection in the child component, we need to project specific content to specific slot.
+eg: <ng-content>
+    <ng-content>
+
+    <ng-content select="slot1">
+    <ng-content>
+
+    <ng-content select="slot2">
+    <ng-content>
+
