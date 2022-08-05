@@ -110,3 +110,35 @@ it will make ready for productions where it removes all unnecessary things and t
 
 // Advanced topic //
 
+25) Explain View child and view childeren?
+View child helps to reference view object to the component and that view object can be component, directive or simple html ele.
+where as View children helps to reference the collection of view objects to the component.
+
+eg - consider the view below as
+
+case i - <div #div1> This is a div1> </div>
+case ii - <comp2>
+            <p> this is p1 </p>
+            <p1 class="s1"> this is p1 with class s1 </p>
+            <p2 class="s2"> this is p2 with class s2 </p>
+          </comp2>
+case iii - <comp2>
+            <p> this is p2 </p>
+          </comp2>
+
+eg - consider the template below as
+
+export class comp2 {
+  @viewchild('div1', {static:false}) divref : ElementRef
+
+  @viewchild(comp2, {static:false}) tref1: comp2
+
+  @viewchildren(comp2) myComponents: QueryList<comp2>
+
+}
+
+in case i, temp ref variable #div1 is referenced by viewchild (single view object)
+
+in case ii, comp2 is refereced by viewchild (single view object)
+
+in case iii, comp2 collection is referenced by viewchildren (collection view object).
