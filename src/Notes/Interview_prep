@@ -165,3 +165,51 @@ eg: <ng-content>
     <ng-content select="slot2">
     <ng-content>
 
+29) Angular Component Life Cycle?
+  Angular components hooks are ready made events which is provided by the angular, where user can tap in and can write custom code.
+
+30) Explain the seqence of Angular component life cylc?
+  Complete Angular events can be divided into 2 parts,
+  1)The seqence of events which occur when the component loaded first time.
+  2)The second seqence of events occurs when it fires on every change detection.
+
+1st event fires was - Constructor ()
+every component has 8 lifecycle hooks..
+
+why we need life cycle hooks?
+some data might be changed while we do some op in component, we want some data to be loaded while component is created, if component
+is changed then other components should get the latest information.
+
+1)ngonchange -- it invokes when it detects the changes in i/p property(change in data which is bounded to i/p property)
+
+2)ngoninit --
+it is called only once
+it is used to initialize the data
+added to every component by default
+it is called when the data bounded property are displayed on screen
+
+3)ngdocheck --
+it involked when the angular change detection runs
+it is used to monitor the changes where ngonchange doesnt catch up, we need to use it explicitly.
+
+4)ngaftercontentinit --
+it is only called once after ngdocheck
+it runs through initialize of content
+
+5)ngaftercontentchecked --
+called after every ngdocheck
+waits till ngaftercontentinit runs first
+
+6)ngafterviewinit --
+after angular initialize the components,views, child components,projected contents this will fires
+calls only once after ngaftercontentchecked.
+
+7)ngafterviewchecked --
+first call after ngafterviewinit
+called aftter every ngaftercontentchecked
+
+8)ngdestroy --
+used to cleanup uncess data when component is removed from dom.
+used to unsubscribe things like Services
+called only once just before component removed from dom
+
