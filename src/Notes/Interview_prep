@@ -213,3 +213,21 @@ used to cleanup uncess data when component is removed from dom.
 used to unsubscribe things like Services
 called only once just before component removed from dom
 
+31) How to make HTTP calls using angular?
+1) we neeed to import the HTTPClient from the @angular/commom/http.
+2) create a http object for the httpclient via dependency injection the constructor.
+3) with the created obj we can make http get/post/update/delete calls.
+4) using subscribe function to catch success and error repsonse
+
+32) how to communicate between the components?
+senerio - 1
+  to communicate between the parent and child we use @input and
+  to communicate between the child and parent we use @output.
+  also we can use viewchild and event emitters.
+senerio - 2
+  while navigating from one component to another by using routing, we can use queryparams
+seneria - 3 (sharing data raather than passing data)
+  by using angular services
+  .
+
+
