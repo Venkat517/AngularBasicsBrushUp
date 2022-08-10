@@ -230,4 +230,11 @@ seneria - 3 (sharing data raather than passing data)
   by using angular services
   .
 
+33) What is a pipe?
+pipe is used to transform the data from one format to another,they are 2 kinds of pipes 1) inbuilt pipes and 2) custom pipes
+
+inbuild pipes
+Async pipe: used to read the obj from async source
+Json pipe: converts obj in to Json
+title,upper,lower,slice, Date, decimal
 
