@@ -1,0 +1,9 @@
+<div class="form-group">
+  <label for="celcius">CELCIUS</label>
+  <input type="number" class="form-control" [(ngModel)]="celcius" (ngModelChange)="changeTemperature($event,'celcius')" placeholder="Enter value in celcius">
+</div>
+<div class="form-group">
+  <label for="farenheit">FARENHEIT</label>
+  <input type="number" class="form-control" [(ngModel)]="farenheit" (ngModelChange)="changeTemperature($event,'farenheit')"
+    placeholder="Enter value in farenheit">
+</div>
