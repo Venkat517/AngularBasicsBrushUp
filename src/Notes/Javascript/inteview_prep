@@ -36,4 +36,25 @@ these are variables that accecible throught out the website or document.
 8) What is the use of Strict keyword?
 Use of 'Strict' keyword checks if the variable defined using var keyword or not.
 
+9) What is a closure?
+In js closure is a feature where inner function has access to outer function's variables and parameters.
+  -Scope of access:
+    -It has access to its own scope
+    -It has access to its outer function variables and parameters
+    -It has access to global scope.
+    - [real Time]: A boy playing in a park can access to equipment (outer functions), Sun (global), in his own home(own scope).
+
+10) What is function expression?
+ When we stored the function in an variable then its called as function expression.
+  -eg: let x = () => {
+    return 1;
+  }
+  - Here we are storing function value to a variable x
+  // function defination
+  eg: console.log(x);
+
+  // function invoking
+  eg: console.log(x());
+
+  //** if we are returing nothing from the function then it is executes as undefined.
 
