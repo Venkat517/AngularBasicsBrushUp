@@ -33,6 +33,7 @@ var b = 20;
 7) what are global variables?
 these are variables that accecible throught out the website or document.
 
-
+8) What is the use of Strict keyword?
+Use of 'Strict' keyword checks if the variable defined using var keyword or not.
 
 
