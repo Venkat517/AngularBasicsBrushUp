@@ -1,0 +1,38 @@
+1) Why JS Is a Dynamic Language?
+JS is a dynamic language becoz data types of the variables can be changed during run time.
+
+2) How to dertimes the datatype of a varible in JS?
+we can determine by the help of Typeof function
+let x = 10;
+typeof(x); // number
+
+3) what are the datatypes in the JS?
+these can classified into 2 types:-
+  1) Primitive data type:
+    - string
+    - number
+    - boolean
+    - null
+    - undefined
+  2) Objects:
+    -objects
+
+4) what is undefined datatype?
+undefined is nothing but a variable has been defined but there is no value associated with it.
+
+5) What is Null?
+null is a data type which is not zero and its not empty but absense of data.
+
+6) what is hoisting?
+It is a mechanism where variables and functional declarations are moved to a top during the run time..
+
+var a = 10;
+console.log('a,b');
+var b = 20;
+
+7) what are global variables?
+these are variables that accecible throught out the website or document.
+
+
+
+
