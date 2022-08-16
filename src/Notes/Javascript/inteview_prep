@@ -58,3 +58,24 @@ In js closure is a feature where inner function has access to outer function's v
 
   //** if we are returing nothing from the function then it is executes as undefined.
 
+11) What is IIFE?
+here functions will be automatically invoked.
+
+//normal function
+-eg: var username = 'sandy';
+  function getName(){
+    username = 'sandeep';
+  };
+  getName();
+  console.log(username);
+  o/p sandeep
+
+//IIFE function
+  -eg: var username = 'sandeep';
+  let newFun = (() => {
+    username = 'sandy';
+  })();
+  console.log(username);
+o/p sandy
+
+
