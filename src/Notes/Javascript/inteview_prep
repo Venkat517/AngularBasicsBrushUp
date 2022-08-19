@@ -147,3 +147,10 @@ step1(100, function (res1, err) {
 });
 
 - To many callbacks results in callback hell. to solve this best way is to use Promises/ (Async/awaite).
+
+//code snippet
+fetch('http://api.github.com/users')
+  .then((response) => response.json())
+  .then(result => console.log(result));
+
+
