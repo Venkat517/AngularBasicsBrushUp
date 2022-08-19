@@ -102,3 +102,48 @@ o/p age: 29
 13) what is a rest operator?
 in a functions when we require to pass arguments,but not sure of args then we use rest operator.
 
+14) What is Synchronous (or) Single threaded ?
+It means that you can only excute one thing at same time. generally JS by default is a Single threaded language.
+
+eg- console.log('sandeep');
+console.log('UI developer');
+
+15) What is asynchronous?
+It means that you can execute multiple things at same time and you need not be to waite next one to be excutes until current finishes
+its task.
+
+eg- console.log('This is one');
+    setTimeout(() => console.log('this is second),2000);
+    console.log('this is 3rd');
+
+o/p
+This is one
+This is 3rd
+This is second (after 2 sec), because setTimeout is callback which belongs to asynchronous.
+
+15) What is a callback?
+- A call back function is passed as a argument to the another function.
+- This technique allows function to call another function.
+- A call back function can run after another function has finished its task.
+
+eg
+
+function step1(value, callback) {
+  callback(value + 10, false);
+}
+
+function step2(value, callback) {
+  callback(value + 10, false);
+}
+
+step1(100, function (res1, err) {
+  if (!err) {
+    step2(res1, function (res2, err) {
+      if (!err) {
+        console.log("Results in callback", res2);
+      }
+    });
+  }
+});
+
+- To many callbacks results in callback hell. to solve this best way is to use Promises/ (Async/awaite).
