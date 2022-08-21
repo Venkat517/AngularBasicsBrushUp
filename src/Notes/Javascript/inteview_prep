@@ -153,4 +153,21 @@ fetch('http://api.github.com/users')
   .then((response) => response.json())
   .then(result => console.log(result));
 
+16) What is hoisting?
+hoisting is a javascript default behavior of moving declarations to the top.
+
+eg: a = 5;
+    var a; (valid)
+
+c();
+function c() {
+  console.log("c");
+}
+(valid)
+
+b=10;
+let b; (invalid)
+
+e=20;
+const e; (invalid)
 
