@@ -260,3 +260,10 @@ Async pipe: used to read the obj from async source
 Json pipe: converts obj in to Json
 title,upper,lower,slice, Date, decimal
 
+34) What is subscribing?
+we need to subscribe to an observable to use the data that flows through that observable.
+This data is generated from a publisher and is consumed by a subscriber and we pass in a function for the data and another function for errors so that,
+in case there is some error.
+
+
+
