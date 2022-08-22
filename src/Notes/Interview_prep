@@ -22,7 +22,7 @@ There are 3 types of directives, they are (S A C)
 
 3) Components are the basic building blocks for angular we can declare by using @component
 
-diff between the components and the directives
+3) diff between the components and the directives
 directives
 - Adds behavior to existing DOM elements.
 - Do not uses views
@@ -52,6 +52,7 @@ ng new myApp
 
 9) What is a decorater?
 it defines what kind of angular class it is? for eg if its a @Component then its a angular component and if it is a @NGModule then its a module.
+eg: @NgModule, @component, @Directives @Injectable.
 
 10) What are annotations or Metadata?
 same a Q9
@@ -194,6 +195,9 @@ why we need life cycle hooks?
 some data might be changed while we do some op in component, we want some data to be loaded while component is created, if component
 is changed then other components should get the latest information.
 
+- Hooks for components/directives
+- Hooks for the component children
+
 1)ngonchange -- it invokes when it detects the changes in i/p property(change in data which is bounded to i/p property)
 
 2)ngoninit --
@@ -202,7 +206,7 @@ it is used to initialize the data
 added to every component by default
 it is called when the data bounded property are displayed on screen
 
-3)ngdocheck --
+3)ngdocheck (also called as developers custom change detective) --
 it involked when the angular change detection runs
 it is used to monitor the changes where ngonchange doesnt catch up, we need to use it explicitly.
 
