@@ -13,12 +13,24 @@ There are 3 types of directives, they are (S A C)
         *ngIf="let ele of elements" {{ele}}
 
   - Attribute directives
-    Change the appearance and behavior of a HTML elements.
+    Change the appearance and behavior of a HTML elements without adding or removing the DOM elements.
     eg: <div [hidden]="Hide()">
     ngClass, ngStyle
 
   - Component directives
     A custom directive(user control)
+
+3) Components are the basic building blocks for angular we can declare by using @component
+
+diff between the components and the directives
+directives
+- Adds behavior to existing DOM elements.
+- Do not uses views
+- Many directives can be used
+Components
+- Creates view with attached behavior
+- Single component can be present per DOM elements
+- Templates are mandatory.
 
 4) What is npm and node_modules folder in the angular.js folder?
 Npm is a package manager where makes intallation of any javascript, node_modules is the folder where all the packages where installed.
