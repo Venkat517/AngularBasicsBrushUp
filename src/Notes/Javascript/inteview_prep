@@ -1,3 +1,7 @@
+What is a DOM?
+The DOM (Document Object Model) is an interface that represents how your HTML and XML documents are read by the browser.
+It allows a language (JavaScript) to manipulate, structure, and style your website. (A logical Tree structure).
+
 1) Why JS Is a Dynamic Language?
 JS is a dynamic language becoz data types of the variables can be changed during run time.
 
