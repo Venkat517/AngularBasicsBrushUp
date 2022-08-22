@@ -89,6 +89,10 @@ There are four types of data binding, they are
   (2) we need to have the <router-outlet> where excatly our page should load.
   (3) we have to define the routerlink in the html  <a [routerlink]> = "['home']"> Home </a>
 
+16) What is Authgaurd?
+it is used to protect the routes from unauthorized access in angular
+it can be acheived by help of canActive function (if its yes then access the routes)
+
 17) What exactly is lazy loading?
  it is called as on demand loading which is essential like HTML, CSS and JS. Thus we can acheive better performance.
 
@@ -97,7 +101,7 @@ There are four types of data binding, they are
 (2) use the load children in the routes collection of that particular modules.
 
 19) What are services?
-  use to share the common functionality across the project.
+  use to share the common functionality across the project. @injectable decorater.
 
 20) What is dependency injection?
   DI is a design pattern, where rather than creating the object instance with the component, Angular will inject via constructor.
