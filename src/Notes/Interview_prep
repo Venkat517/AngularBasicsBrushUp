@@ -1,5 +1,6 @@
 1) What is Angular
-Angular is a javascript binding framework which binds html(view) and javascript(model), Also it helps to build SPA's using the concept of routing.
+Angular is a javascript binding framework which binds html(view) and javascript(model),
+Also it helps to build SPA's using the concept of routing,DI, HTTP and Input/Output. It builds on MVVM pattern.
 
 2) What is a directive?
 Directives are angular syntaxes inside the html which will helps to attach/change the behavior of HTML DOM.
@@ -14,6 +15,7 @@ There are 3 types of directives, they are (S A C)
   - Attribute directives
     Change the appearance and behavior of a HTML elements.
     eg: <div [hidden]="Hide()">
+    ngClass, ngStyle
 
   - Component directives
     A custom directive(user control)
