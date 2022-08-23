@@ -265,5 +265,10 @@ we need to subscribe to an observable to use the data that flows through that ob
 This data is generated from a publisher and is consumed by a subscriber and we pass in a function for the data and another function for errors so that,
 in case there is some error.
 
+35) What is change detection?
+- The basic mechanism of the change detection is to perform checks against two states,
+one is the current state, the other is the new state.
+- Change Detection means updating the view (DOM) when the data has changed.
+
 
 
