@@ -270,5 +270,15 @@ in case there is some error.
 one is the current state, the other is the new state.
 - Change Detection means updating the view (DOM) when the data has changed.
 
+36)What are functions provided by Rxjs
+
+The RxJS library also provides below utility functions for creating and working with observables.
+
+- Converting existing code for async operations into observables
+- Iterating through the values in a stream.
+- Mapping values to different types.
+- Filtering streams.
+- Composing multiple streams.
+
 
 
