@@ -335,6 +335,14 @@ HostBinding is used to bind the input properties in the host element to the dire
 With the HostBinding decorator, a directive can link internal property to the input property of the host element.
 When the internal property is changed, the input property of the host element will change too.
 
+46) Steps to detect route change in angular?
+- Import Router, Event, NavigationStart, NavigationEnd, NavigationError from ‘@angular/router’.
+- And inject router in the constructor.
+- Subscribe to the NavigationStart, NavigationEnd, NavigationError events of the router.
+- Detect the change in URL route in NavigationStart’s subscribe method.
+
+
+
 
 
 
