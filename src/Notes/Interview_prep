@@ -95,6 +95,10 @@ it can be acheived by help of canActive function (if its yes then access the rou
 
 17) What exactly is lazy loading?
  it is called as on demand loading which is essential like HTML, CSS and JS. Thus we can acheive better performance.
+ Angular 8 comes up with support for dynamic imports in our router configuration.
+ This means that we use the import statement for lazy loading the module and this will be understood by the IDEs, webpack, etc.
+
+ eg {path: ‘user’, loadChildren: () => import(‘./users/user.module’).then(m => m.UserModule)};
 
 18) How to implement Lazy loading in angular?
 (1) divide the project into separete modules
@@ -271,7 +275,6 @@ one is the current state, the other is the new state.
 - Change Detection means updating the view (DOM) when the data has changed.
 
 36)What are functions provided by Rxjs
-
 The RxJS library also provides below utility functions for creating and working with observables.
 
 - Converting existing code for async operations into observables
@@ -279,6 +282,59 @@ The RxJS library also provides below utility functions for creating and working 
 - Mapping values to different types.
 - Filtering streams.
 - Composing multiple streams.
+
+37) What is AOT?
+The Angular Ahead-of-Time compiler pre-compiles application components and their templates during the build process.
+Apps compiled with AOT launch faster for several reasons.
+
+- Application components execute immediately, without client-side compilation.
+- Templates are embedded as code within their components so there is no client-side request for template files.
+- You don't download the Angular compiler, which is pretty big on its own.
+- The compiler discards unused Angular directives that a tree-shaking tool can then exclude.
+
+38) Why should ngOnInit be used, if we already have a constructor?
+- The Constructor is a default method of the class that is executed when the class is instantiated and ensures proper
+  initialization of fields in the class and its subclasses.
+
+- ngOnInit is a life cycle hook called by Angular2 to indicate that Angular is done creating the component.
+  Mostly we use ngOnInit for all the initialization/declaration and avoid stuff to work in the constructor.
+
+39) Why does incremental DOM have a low memory footprint in Angular 8?
+Every time we re-render, Virtual DOM creates a tree from scratch. But incremental DOM requires no memory to re-render
+the view as long as the DOM isn’t changed, and the memory has to be allocated only when the DOM nodes are added or deleted.
+
+40) What is Redux in the context of Angular 8?
+Redux is a way to manage the application state and improve the maintainability of asynchronicity in our application.
+
+41) What is Ivy and Bazel?
+Ivy is the new compilation and rendering pipeline engine that is used from the Angular version 8.
+You can create a new project with Ivy enabled engine or use the Ivy engine in your existing project.
+
+Bazel is the new tool available in the Angular version 8 that allows you to break an application into distinct build units at the NgModule level.
+With this, you can rebuild the part of the code that is changed instead of rebuilding the entire application.
+
+43) What is Angular Universe?
+It is defined as the process of SSR(server-side rendering) in which HTML present on the server.
+Basically, Angular application are single page applications so the rendering occur on the browser.
+
+44) What is tree shakable in angular?
+The tree shaking mechanism refers to the process of removing unused code and including only the code that is needed for the application to run.
+to increase the performance.
+
+45) What is host listener and hostbinding in angular?
+HostListener in Angular is a function decorator. It accepts an event name as the argument and calls the associated function
+when the event gets fired on the host element.
+
+//example
+@HostListener('mouseover') onHover() {
+  window.alert("hover");
+}
+Here, when you hover the mouse on the host element, an alert popup will be triggered.
+
+HostBinding is used to bind the input properties in the host element to the directive.
+With the HostBinding decorator, a directive can link internal property to the input property of the host element.
+When the internal property is changed, the input property of the host element will change too.
+
 
 
 
