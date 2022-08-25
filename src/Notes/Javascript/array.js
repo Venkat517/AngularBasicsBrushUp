@@ -40,4 +40,30 @@ console.log(cities);
 
 // (3) ["ABC", "GHI", "LMN"]
 
+//In this call to splice(), the first argument says where to start removing items, and the second argument says how many items should be removed
+
+// Accessing every item in the array
+const birds = ['Parrot', 'Falcon', 'Owl'];
+
+for (const bird of birds) {
+  console.log(bird);
+}
+Parrot
+Falcon
+Owl
+
+// using MAP operator
+
+function double(number) {
+  return number * 2;
+}
+const numbers = [5, 2, 7, 6];
+const doubled = numbers.map(double);
+console.log(doubled);
+
+(4)[10, 4, 14, 12]
+
+//We give a function to the map(), and map() calls the function once for each item in the array, passing in the item.
+//It then adds the return value from each function call to a new array, and finally returns the new array.
+
 
