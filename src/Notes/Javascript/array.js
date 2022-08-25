@@ -29,4 +29,15 @@ console.log('Arrya index ' + indexedArray.indexOf(0))
 console.log('Arrya index ' + indexedArray.indexOf('car'))
 // o/p Arrya index -1
 
+// If you know the index of an item, you can remove it from the array using splice():
+
+const cities = ['ABC', 'DEF', 'GHI', 'LMN'];
+const index = cities.indexOf('DEF');
+if (index !== -1) {
+  cities.splice(index, 1)
+}
+console.log(cities);
+
+// (3) ["ABC", "GHI", "LMN"]
+
 
