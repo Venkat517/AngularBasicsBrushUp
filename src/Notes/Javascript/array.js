@@ -66,4 +66,17 @@ console.log(doubled);
 //We give a function to the map(), and map() calls the function once for each item in the array, passing in the item.
 //It then adds the return value from each function call to a new array, and finally returns the new array.
 
+// Using Filter operator
+function isLong(city) {
+  return city.length > 6;
+}
+const cities = ['London', 'Liverpool', 'Totnes', 'Edinburgh'];
+const longCity = cities.filter(isLong)
+console.log(longCity);
+
+(2)["Liverpool", "Edinburgh"]
+
+//Like map(), we give a function to the filter() method, and filter() calls this function for every item in the array,
+//passing in the item. If the function returns true, then the item is added to a new array. Finally it returns the new array.
+
 
