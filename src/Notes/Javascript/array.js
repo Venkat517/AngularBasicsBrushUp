@@ -80,3 +80,27 @@ console.log(longCity);
 //passing in the item. If the function returns true, then the item is added to a new array. Finally it returns the new array.
 
 
+//Converting between strings and arrays
+const data = 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle';
+const cities = data.split(',');
+console.log(cities);
+
+(6)["Manchester", "London", "Liverpool"]
+
+// other methods to convert string to array
+const string = 'word';
+
+// Option 1
+string.split('');
+
+// Option 2
+[...string];
+
+// Option 3
+Array.from(string);
+
+// Option 4
+Object.assign([], string);
+
+// Result:
+// ['w', 'o', 'r', 'd']
