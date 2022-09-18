@@ -1,0 +1,30 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">email</th>
+      <th scope="col">username</th>
+      <th scope="col">company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.company.catchPhrase}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <table class="table table-striped">
+  <ng-container *ngFor="let user of users; let i = index">
+    <tr *ngIf="i==0">
+      <th>
+        {{getKeys(user.name[0])}}
+      </th>
+    </tr>
+  </ng-container>
+</table> -->
