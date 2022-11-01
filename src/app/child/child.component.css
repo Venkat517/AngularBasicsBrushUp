@@ -1,0 +1,8 @@
+
+  .box {
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid slategrey;
+    max-width: 50%;
+}

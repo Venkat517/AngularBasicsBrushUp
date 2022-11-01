@@ -8,13 +8,21 @@ import { TempConverterComponent } from './temp-converter/temp-converter.componen
 import { UserComponent } from './user/user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { FirstComponent } from './first/first.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TempConverterComponent,
     UserComponent,
-    HeaderComponent
+    HeaderComponent,
+    FirstComponent,
+    RxjsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
