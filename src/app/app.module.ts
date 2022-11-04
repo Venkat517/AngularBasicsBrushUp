@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +13,9 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 
+import { MyExceptionHandler } from '../GlobalErrorHandler';
+import { SampleErrorComponent } from './sample-error/sample-error.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,8 @@ import { ChildComponent } from './child/child.component';
     FirstComponent,
     RxjsComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    SampleErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,7 @@ import { ChildComponent } from './child/child.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{ provide: ErrorHandler, useClass: MyExceptionHandler }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

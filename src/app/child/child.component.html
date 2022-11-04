@@ -1,3 +1,7 @@
 <div class="box">
   <p> The message was {{message}}.inside the child component</p>
 </div>
+
+<div (click)="triggerCustomEvent('Event Triggered from child component')">
+  Here it will fire the event
+</div>

@@ -1,4 +1,6 @@
 <p>We are in the parent component</p>
 
+<div>The value from child is {{result}}</div>
+
 <!-- loading child component and passing info to the parent component -->
-<app-child [message]="result"></app-child>
+<app-child [message]="result" (notify)="getData($event)"></app-child>

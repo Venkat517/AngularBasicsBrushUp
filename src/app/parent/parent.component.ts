@@ -16,4 +16,8 @@ export class ParentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getData(result: string) {
+    this.result = result;
+    alert(result);
+  }
 }
