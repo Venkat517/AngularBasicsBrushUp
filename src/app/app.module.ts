@@ -15,6 +15,8 @@ import { ChildComponent } from './child/child.component';
 
 import { MyExceptionHandler } from '../GlobalErrorHandler';
 import { SampleErrorComponent } from './sample-error/sample-error.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { ChangeColorDirective } from './change-color.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SampleErrorComponent } from './sample-error/sample-error.component';
     RxjsComponent,
     ParentComponent,
     ChildComponent,
-    SampleErrorComponent
+    SampleErrorComponent,
+    DirectivesComponent,
+    ChangeColorDirective
   ],
   imports: [
     BrowserModule,

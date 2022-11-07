@@ -1,0 +1,52 @@
+<p>directives works!</p>
+
+<b> Ng For directive</b>
+<ul>
+  <li *ngFor="let p of person">
+    {{p.name}}
+  </li>
+</ul>
+
+<hr>
+
+<b> Ng If directive</b>
+<ul *ngFor="let p of person">
+  <li *ngIf="p.age > 27 ; else greaterage">
+    {{p.name}} ({{p.age}})
+  </li>
+</ul>
+
+<ul *ngFor="let emp of employee">
+  <li *ngIf="emp.age > 30">
+    {{emp.name}} {{emp.age}} {{emp.salary}}
+  </li>
+</ul>
+
+<hr> Using ng template for else part in the angular
+
+<ng-template #greaterage>
+  <i> There are only one person greater than age 30</i>
+</ng-template>
+
+
+<br>
+<b>Using ng template for perfomance and bestpractise</b>
+
+<ng-container *ngFor="let emp of employee">
+  <div *ngIf="emp.age >27">
+    {{emp.name}} {{emp.age}} {{emp.salary}}
+  </div>
+</ng-container>
+
+<hr>
+
+<p> demo for using ngClass</p>
+
+<ul *ngFor="let emp of employee">
+  <li [ngClass]="{
+    'text-success': emp.country ==='usa',
+    'text-danger': emp.country === 'uk'
+    }"></li>
+  {{emp.name}} {{emp.age}} {{emp.salary}} {{emp.country}}
+
+</ul>
